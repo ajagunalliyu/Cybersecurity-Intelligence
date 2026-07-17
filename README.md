@@ -3,146 +3,68 @@ A visual deep dive into global cybersecurity trends, threats and response strate
 
 ![](cybersecurity-concept-collage-design.jpg)
 
+Global cybersecurity losses hit $151.48 billion across 3,000 incidents affecting 1.51 billion users between 2015 and 2024, and I wanted to know whether defenses were keeping pace. Using a Kaggle dataset modeled as a star schema in Power BI, I tracked incident volume, financial impact, attack types, and response time by country. The finding that matters most: threat volume and financial cost are rising faster than response times are improving — average response time sits at 36.5 hours, and the UK, despite being a top target, still leads in both attack volume and financial loss.
 
-# Table of Contents
-- [ Introduction: Project Overview](#-introduction-project-overview)
-- [ Project Goal](#-project-goal)
-- [ Methodology](#-methodology)
-- [ Data Visualization](#-data-visualization)
-- [ Dataset](#️-dataset)
-- [ Dashboard](#️-dashboard)
-- [ Key Statistics](#-key-statistics)
-- [ Trends and Insights](#-trends-and-insights)
-- [ Recommendations for Mitigation](#-recommendations-for-mitigation)
-- [ Conclusion](#-conclusion)
+### The Business Problem
 
-# Introduction: Project Overview
-## Title: Global Cybersecurity Threats Analysis (2015–2024)
-This project presents a comprehensive analysis of global cybersecurity threats between 2015 and 2024. Using data sourced from Kaggle, I leveraged Power BI to uncover trends, evaluate risk impact, and visualize key threat patterns across countries, attack types, and response strategies. The goal is to transform raw cybersecurity data into actionable insights for decision-makers and IT security professionals.
-Threat volume, financial impact and users exposure are all rising while response time is improving slightly but not significantly. This implies that threat severity is outpacing defensive improvement.
+IT security leaders and decision-makers need a clear, data-driven view of how cyber threats have evolved. Which sectors and countries are hit hardest, which attack types cause the most damage, and whether current response capabilities are actually improving, to prioritize defense investment.
 
-# Project Goal
-The primary objective of this project is to:
-- Identify trends in global cybersecurity incidents from 2015 to 2024.
-- Highlight the financial and human impact of these threats.
-- Reveal the most common types and sources of cyberattacks.
-- Evaluate response times by country.
-- Provide data-driven recommendations to mitigate future cyber risks.
+### Data & Method
 
-# Methodology
-This project followed a structured data-driven approach to analyze global cybersecurity threats from 2015–2024. The methodology consisted of four key phases:
-1. Data Collection & Sourcing
-2. Data Cleaning & Preprocessing
-3. Data Analysis 
-4. Reporting & Visualization
 
-Tool Used: Power BI
+Source: Kaggle global cybersecurity threats dataset (2015–2024)
 
-Dataset Source: Kaggle
+Cleaning: Power Query Editor
 
-Data Cleaning: Power Query Editor
+Modeling: star schema with a dedicated date table and DAX measures
 
-Analysis Focus: Incident frequency, Financial losses, User exposure, Attack vectors, Source attribution, Response efficiency
+Analysis focus: incident frequency, financial losses, user exposure, attack vectors, source attribution, response efficiency by country
 
-Visuals Used: Line charts, Bar graphs, KPI cards, Maps, Slicers, Tables.
 
-# Data Visualization
-## Dataset
-Below are sample views of the dataset used for this project and the analysis process:
+### Key Insights
 
-### Excel Interface
-![](DatasetinExcelInterface.png)
+"Incidents peaked at 320/year in 2020 and 2022, before easing slightly in 2024 as detection improved" - a volume trend tied to a plausible cause, not just a line going up.
 
-### Power Query Interface 
-![](DatainPowerQueryInterface.png)
+"2017 was the costliest year on record at $16 billion in losses, despite a dip in the years that followed" - impact and frequency don't move in lockstep.
 
-### Data Modelling (This model is a star schema)
-![](DataModelinPowerBI.png)
+"IT ($25B) and Banking/Finance ($23B) absorb the largest sector losses because they hold the most sensitive data" - names the mechanism, not just the ranking.
 
-### DAX for Measures
-![](DAXinPowerBI.png)
+"DDoS ($28B) and Phishing ($27B) are the costliest attack types, ahead of SQL Injection and Ransomware" - prioritizes where mitigation budget should go first.
 
-### Date Table
-![](DateTable.png)
+"The UK has both the highest attack volume and the highest financial loss ($16.5B) among all countries tracked" - a single country carrying disproportionate risk.
 
-### Fact Table
-![](FactTableinTableView.png)
+"Average response time is 36.5 hours and improving only slightly; threat severity is outpacing defensive gains" - the report's central thesis, stated as a finding rather than a description.
 
-## Dashboard 
 
-### These images show parts of the developed dashboards: 
+### Clear Recommendations
 
-### Trend, Regional and Responsiveness Analysis 
-![](Reportpage1.png)
+Strengthen internal controls - user behavior analytics, stricter identity/access policies, more frequent digital audits.
 
-### Sector Risk Profile and Defense Mechanism 
-![](Reportpage2.png)
+Deploy targeted mitigation for the costliest attack types: cloud-based DDoS protection and recurring phishing-simulation training.
 
-### Report on Power BI Interface
-![](ReportonPowerBIInterface.png)
+Adopt automated, real-time response, SOAR platforms and AI-based anomaly detection - to close the response-time gap.
 
-To interact with the report: [**CLICK HERE**](https://app.powerbi.com/view?r=eyJrIjoiNzMwZTNjZDItMjFhYy00OTM2LWI4MWEtNGZlMmI5MzAyODE0IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9)
+Invest in attribution and visibility through digital forensics tools and threat-intelligence platforms.
 
-# Key Statistics
-- **Total Incidents:** 3,000
-- **Financial Losses:** $151.48 billion
-- **Users Affected:** 1.51 billion 
-- **Average Users per Incident:** 505,000
-- **Average Response Time:** 36.48 hours
+Join international cybersecurity information-sharing alliances, since losses are distributed globally with no "safe zone."
 
-# Trends and Insights
-## Hack Volume
-- Sharp rise in 2020 and 2022, peaking at about 320 incidents/year
-- Slight drop in 2024, possibly due to improved detection and response systems.
-## User Exposure & Financial Cost
-- Peak impact years: 2017 and 2023. 2017 being the most damaging year ($16 billion loss)
-- A significant decline from 2017 to 2019.
-- Losses increased in 2020 and post 2020, this is probably due to increased hybrid work.
-## Industry-Specific Impact
-- IT sector losses reached $25 billion
-- Banking/finance also lost $23 billion.
-- These sectors remain the prime target due to their high data sensitivity.
-## Global Impact
-- Germany, Brazil, UK, India, China, USA are top affected.  UK suffered the highest financial loss ($16.5 billion) and recorded the highest attack volume.
-- Losses are evenly distributed across regions which indicates that there is no safe zone.
-## Attack Types
-- DDoS, Phishing, SQL Injection are the most common
-- DDoS & Phishing caused $28 billion and $ 27 billion in losses respectively
-- SQL Injection and Ransomware followed closely with $25 billion and $24 billion impact respectively.
-## Attack Sources
-- Unknown sources: $40.5 billion losses
-- Hacker groups, nation-states, insiders: $35+ billion each.
-## Response Time
-- Fastest: USA ( around 35 hours)
-- Slowest: Brazil and China (37–38 hours)
-- Global response improving, but still slow for modern threats.
 
-![](html-css-collage-concept-with-person.jpg)
+Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzMwZTNjZDItMjFhYy00OTM2LWI4MWEtNGZlMmI5MzAyODE0IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9) · [Medium report](https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5?sharedUserId=ajagunalliyu)
 
-# Recommendations for Mitigation
-## 1. Strengthen Internal Controls
-- Implement User Behavior Analytics
-- Enforce strict identity/access policies
-- Increase frequency of digital audits
-## 2. Targeted Threat Mitigation
-- Deploy cloud-based DDoS protection
-- Conduct phishing simulations and staff training
-## 3. Automated & Real-Time Response
-- Adopt SOAR solutions
-- Use AI for anomaly detection
-## 4. Attribution & Visibility
-- Invest in digital forensics tools
-- Use threat intelligence platforms
-## 5. Global Collaboration
-- Join international cybersecurity alliances
-- Share anonymized threat data to strengthen global resilience
+## Let's Connect
+ 
+> Feel free to reach out: [ajagunalliyu@gmail.com](mailto:ajagunalliyu@gmail.com)  
+> Connect with me on [LinkedIn](https://www.linkedin.com/in/alliyuajagun)  
+> Follow on [Twitter/X](https://x.com/Sayyid_Alliyu)  
+> Read more on [Medium](https://medium.com/@ajagunalliyu)  
+> 💻 Explore more projects on [GitHub](https://github.com/ajagunalliyu)
+> View [Portfolio website](https://sites.google.com/view/alliyutheanalyst/portfolio?authuser=0)
 
-## Conclusion
-Cybersecurity threats have grown significantly in volume and financial impact from 2015–2024. With over **$151 billion** in losses and **1.5 billion** users affected globally, cybersecurity is no longer an IT responsibility alone, it's a **core business imperative**.
-This Power BI project underscores the urgent need for **proactive defense, automation, user education, and global cooperation**. As the threat landscape continues to evolve, staying ahead requires real-time insight, collaborative intelligence sharing, and robust mitigation strategies.
 
-## Detailed Insights, Recommendations and full report on medium [**HERE**](https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5)
+## ⭐ Support
 
-Prepared by:
-Ajagun Alliyu Aremu
+If you found this project helpful or interesting, consider giving the repository a **star**. Your support helps increase the visibility of my work and encourages me to continue building and sharing data analytics projects.
+
+Thank you for visiting!
+
 
