@@ -1,9 +1,9 @@
 # Cybersecurity-Intelligence
 A visual deep dive into global cybersecurity trends, threats and response strategies using Power BI
 
-![](cybersecurity-concept-collage-design.jpg)
+![](assets/cybersecurity-concept-collage-design.jpg)
 
-Global cybersecurity losses hit $151.48 billion across 3,000 incidents affecting 1.51 billion users between 2015 and 2024, and I wanted to know whether defenses were keeping pace. Using a Kaggle dataset modeled as a star schema in Power BI, I tracked incident volume, financial impact, attack types, and response time by country. The finding that matters most: threat volume and financial cost are rising faster than response times are improving — average response time sits at 36.5 hours, and the UK, despite being a top target, still leads in both attack volume and financial loss.
+Global cybersecurity losses hit $151.48 billion across 3,000 incidents affecting 1.51 billion users between 2015 and 2024, and I wanted to know whether defenses were keeping pace. Using a Kaggle dataset modeled as a star schema in Power BI, I tracked incident volume, financial impact, attack types, and response time by country. The finding that matters most: threat volume and financial cost are rising faster than response times are improving; average response time sits at 36.5 hours, and the UK, despite being a top target, still leads in both attack volume and financial loss.
 
 ### The Business Problem
 
@@ -19,9 +19,10 @@ Cleaning: Power Query Editor
 Modeling: star schema with a dedicated date table and DAX measures
 
 Analysis focus: incident frequency, financial losses, user exposure, attack vectors, source attribution, response efficiency by country
-
+![](assets/Data_Model.png)
 
 ### Key Insights
+![](dashboards/Trend_Regional_Dashboard.png)
 
 "Incidents peaked at 320/year in 2020 and 2022, before easing slightly in 2024 as detection improved" - a volume trend tied to a plausible cause, not just a line going up.
 
