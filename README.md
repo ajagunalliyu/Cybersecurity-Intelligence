@@ -15,6 +15,7 @@ IT security leaders and decision-makers need a clear, data-driven view of how cy
 - Cleaning: Power Query Editor
 - Modeling: star schema with a dedicated date table and DAX measures
 - Analysis focus: incident frequency, financial losses, user exposure, attack vectors, source attribution, response efficiency by country
+
 ![](assets/Data_Model.png)
 
 ### Key Insights
