@@ -22,7 +22,7 @@ Analysis focus: incident frequency, financial losses, user exposure, attack vect
 ![](assets/Data_Model.png)
 
 ### Key Insights
-![](dashboards/Trend_Regional_Dashboard.png)
+![](dashboard/Trend_Regional_Dashboard.png)
 
 "Incidents peaked at 320/year in 2020 and 2022, before easing slightly in 2024 as detection improved" - a volume trend tied to a plausible cause, not just a line going up.
 
