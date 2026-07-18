@@ -11,43 +11,30 @@ IT security leaders and decision-makers need a clear, data-driven view of how cy
 
 ### Data & Method
 
-
-Source: Kaggle global cybersecurity threats dataset (2015–2024)
-
-Cleaning: Power Query Editor
-
-Modeling: star schema with a dedicated date table and DAX measures
-
-Analysis focus: incident frequency, financial losses, user exposure, attack vectors, source attribution, response efficiency by country
+- Source: Kaggle global cybersecurity threats dataset (2015–2024)
+- Cleaning: Power Query Editor
+- Modeling: star schema with a dedicated date table and DAX measures
+- Analysis focus: incident frequency, financial losses, user exposure, attack vectors, source attribution, response efficiency by country
 ![](assets/Data_Model.png)
 
 ### Key Insights
 ![](dashboard/Trend_Regional_Dashboard.png)
 
-"Incidents peaked at 320/year in 2020 and 2022, before easing slightly in 2024 as detection improved" - a volume trend tied to a plausible cause, not just a line going up.
-
-"2017 was the costliest year on record at $16 billion in losses, despite a dip in the years that followed" - impact and frequency don't move in lockstep.
-
-"IT ($25B) and Banking/Finance ($23B) absorb the largest sector losses because they hold the most sensitive data" - names the mechanism, not just the ranking.
-
-"DDoS ($28B) and Phishing ($27B) are the costliest attack types, ahead of SQL Injection and Ransomware" - prioritizes where mitigation budget should go first.
-
-"The UK has both the highest attack volume and the highest financial loss ($16.5B) among all countries tracked" - a single country carrying disproportionate risk.
-
-"Average response time is 36.5 hours and improving only slightly; threat severity is outpacing defensive gains" - the report's central thesis, stated as a finding rather than a description.
+* "Incidents peaked at 320/year in 2020 and 2022, before easing slightly in 2024 as detection improved" - a volume trend tied to a plausible cause, not just a line going up.
+* "2017 was the costliest year on record at $16 billion in losses, despite a dip in the years that followed" - impact and frequency don't move in lockstep.
+* "IT ($25B) and Banking/Finance ($23B) absorb the largest sector losses because they hold the most sensitive data" - names the mechanism, not just the ranking.
+* "DDoS ($28B) and Phishing ($27B) are the costliest attack types, ahead of SQL Injection and Ransomware" - prioritizes where mitigation budget should go first.
+* "The UK has both the highest attack volume and the highest financial loss ($16.5B) among all countries tracked" - a single country carrying disproportionate risk.
+* "Average response time is 36.5 hours and improving only slightly; threat severity is outpacing defensive gains" - the report's central thesis, stated as a finding rather than a description.
 
 
 ### Clear Recommendations
 
-Strengthen internal controls - user behavior analytics, stricter identity/access policies, more frequent digital audits.
-
-Deploy targeted mitigation for the costliest attack types: cloud-based DDoS protection and recurring phishing-simulation training.
-
-Adopt automated, real-time response, SOAR platforms and AI-based anomaly detection - to close the response-time gap.
-
-Invest in attribution and visibility through digital forensics tools and threat-intelligence platforms.
-
-Join international cybersecurity information-sharing alliances, since losses are distributed globally with no "safe zone."
+* Strengthen internal controls - user behavior analytics, stricter identity/access policies, more frequent digital audits.
+* Deploy targeted mitigation for the costliest attack types: cloud-based DDoS protection and recurring phishing-simulation training.
+* Adopt automated, real-time response, SOAR platforms and AI-based anomaly detection - to close the response-time gap.
+* Invest in attribution and visibility through digital forensics tools and threat-intelligence platforms.
+* Join international cybersecurity information-sharing alliances, since losses are distributed globally with no "safe zone."
 
 
 Links: [Live dashboard](https://app.powerbi.com/view?r=eyJrIjoiNzMwZTNjZDItMjFhYy00OTM2LWI4MWEtNGZlMmI5MzAyODE0IiwidCI6ImI2NDU3ZDY4LTQzODgtNGMzYS04MjIyLTc0ZGU0NDU5ZDFlZiJ9) · [Medium report](https://medium.com/@ajagunalliyu/cybersecurity-intelligence-visualization-using-power-bi-b4efdb6f04e5?sharedUserId=ajagunalliyu)
